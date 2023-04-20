@@ -6,9 +6,20 @@
     <body>
         <h1>Tip Calculator</h1>
         <div id = "container">
-            <input id = "billAmount"/>
-            <input id = "tipPercent"/>
-            <h3 id = "total">Total</h3>
+            <input 
+                id = "billAmount"
+                type="number"
+                placeholder="$100"
+                onkeyup="calculate()"
+            />
+            <input 
+                id = "tipPercent"
+                placeholder="10%"
+                type="number"
+                onkeyup="calculate()"
+                />
+            <h3>Total: $</h3>
+            <h3 id = "total"></h3>
         </div>
         <script src="script.js"></script>
     </body>
